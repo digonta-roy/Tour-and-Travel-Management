@@ -1,0 +1,275 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* css variables */
+:root{
+    --navbar-heights: 59px;
+}
+
+
+/* navigation bar */
+#navbar{
+    
+    display: flex;
+     align-items: center;
+     position: relative;
+     top: 0px;
+}
+/* navigation bar: logo and image */
+#logo{
+    margin: 3px 25px;
+}
+#logo img{
+    height: 56px;
+    margin: 29px 1px;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* navigation bar: list styling */
+
+#navbar::before{
+    content: "";
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#navbar ul{
+    
+    display: flex;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+#navbar ul li{
+    
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 3px 22px;
+    border-radius: 20px;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+.right{
+     
+    
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 23px;
+}
+
+
+#right .btn{
+    position: relative;
+    top: -12px;
+    left: 500px;
+    margin: 1px 3px;
+    background-color: rgb(179, 22, 22);
+    color: white;
+    padding: 5px 17px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 521px;               /* for fullscreen wallpaper*/
+}
+
+#home::before{
+    content: "";
+    opacity: .9;
+    top: 0px;
+    left: 0px;
+    background: url('../img/bg5.jpg') no-repeat center center/cover;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+}
+#home h1{
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.877);
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+
+}
+/* services section */
+#services{
+    display: flex;
+    margin: 34px;
+}
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+    
+}
+#services .box p{
+    font-family: 'Original Surfer', cursive;
+}
+#client-section{
+    height: 344px;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg3.jpg') no-repeat center center/cover;
+    height: 48%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;                           /*apple image sizing*/
+}
+
+
+/* contacts section */
+#contact{
+    position: relative;                       /*why relative?? check by using absolute*/
+}
+#contact::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .7;
+    background: url('../img/contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+}
+
+button{
+    margin: 2px 1px;
+    border: none;
+     padding: 2px 1px; 
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgb(75, 64, 64);
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.3rem;
+}
+
+
+footer{
+    background: black;
+    padding: 9px 20px;
+    color: white;
+}
+
+
+
+.h-primary{
+    font-family: 'Original Surfer', cursive;
+    font-size: 2.8rem;
+    padding: 20px;
+
+    
+
+}
+.h-secondary{
+    font-family: 'Original Surfer', cursive;
+    font-size: 2,0 rem;
+    padding: 15px;
+
+}
+.btn{
+    padding: 6px 20px;
+    background-color: brown;
+    color: white;
+    border: 2px solid red;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin: 17px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
